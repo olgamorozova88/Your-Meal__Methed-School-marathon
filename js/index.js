@@ -7,8 +7,6 @@ const productIngredients = productModal.querySelector('.ingredients__list');
 const productNutritionValue = productModal.querySelector('.ingredients__calories');
 const productPrice = productModal.querySelector('.modal-product__price-count');
 
-console.log(productTitle)
-
 const product = {
   name: 'Самый вкусный бургер',
   description: 'Самый вкусный бургер, который вы когда-либо пробовали. Сочная мясная котлета сыр, овощи и соус на пшеничной булочке',
@@ -51,13 +49,17 @@ const renderProductDetails = () => {
 const onClickProductModalClose = (evt) => {
   const target = evt.target;
   if (target.closest('.modal__close') || target === productModal) {
-  productModal.classList.remove('modal_open');
+    productModal.classList.remove('modal_open');
+    productModal.removeEventListener('click', onClickProductModalClose);
+    document.removeEventListener('keydown', onEscKeyPress);
   }
 }
 
 const onEscKeyPress = (evt) => {
   if (evt.key === 'Esc' || evt.key === 'Escape') {
     productModal.classList.remove('modal_open');
+    productModal.removeEventListener('click', onClickProductModalClose);
+    document.removeEventListener('keydown', onEscKeyPress);
   }
 }
 
@@ -66,8 +68,8 @@ const showProductDetails = (evt) => {
   if (target.closest('.product__detail') || target.closest('.product__image')) {
     productModal.classList.add('modal_open');
     renderProductDetails();
-    productModal.addEventListener('click', onClickProductModalClose, {once: true});
-    document.addEventListener('keydown', onEscKeyPress, {once: true});
+    productModal.addEventListener('click', onClickProductModalClose);
+    document.addEventListener('keydown', onEscKeyPress);
   }
 }
 
