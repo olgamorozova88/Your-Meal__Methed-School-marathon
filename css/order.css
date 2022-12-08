@@ -12,6 +12,7 @@
   background: #FFFFFF;
   border-radius: 12px;
   padding: 16px 10px;
+  z-index: 10;
 }
 
 .order__wrap-title {
@@ -123,6 +124,7 @@
 .order__submit:disabled {
   background-color: #F9F9F9;
   color: #ACACAC;
+  cursor: no-drop;
 }
 
 .order__appeal {

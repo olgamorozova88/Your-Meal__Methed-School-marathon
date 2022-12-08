@@ -86,6 +86,7 @@ fieldset {
 
 .modal_open {
   display: flex;
+  z-index: 10;
 }
 
 .modal__main {

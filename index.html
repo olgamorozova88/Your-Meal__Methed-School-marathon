@@ -15,7 +15,7 @@
   <meta name="theme-color" content="#FFAB08">
   <title>YourMeal - Самые сочные бургеры</title>
   <link rel="stylesheet" href="css/index.css">
-  <script src="js/index.js" defer></script>
+  <script src="js/index.js" type="module"></script>
 </head>
 
 <body>
@@ -77,77 +77,17 @@
             <div class="order__wrap-title">
               <h2 class="order__title">Корзина</h2>
 
-              <span class="order__count">4</span>
+              <span class="order__count">0</span>
             </div>
 
             <div class="order__wrap-list">
-              <ul class="order__list">
-                <li class="order__item">
-                  <img src="img/burger1.jpg" alt="Супер сырный" class="order__image">
-
-                  <div class="order__product">
-                    <h3 class="order__product-title">Супер сырный</h3>
-
-                    <p class="order__product-weight">512г</p>
-
-                    <p class="order__product-price">550₽</p>
-                  </div>
-
-                  <div class="order__product-count count">
-                    <button class="count__minus">-</button>
-
-                    <p class="count__amount">1</p>
-
-                    <button class="count__plus">+</button>
-                  </div>
-                </li>
-
-                <li class="order__item">
-                  <img src="img/free.jpg" alt="Картошка фри" class="order__image">
-
-                  <div class="order__product">
-                    <h3 class="order__product-title">Картошка фри</h3>
-
-                    <p class="order__product-weight">180г</p>
-
-                    <p class="order__product-price">245₽</p>
-                  </div>
-
-                  <div class="order__product-count count">
-                    <button class="count__minus">-</button>
-
-                    <p class="count__amount">2</p>
-
-                    <button class="count__plus">+</button>
-                  </div>
-                </li>
-
-                <li class="order__item">
-                  <img src="img/hot-dog1.jpg" alt="Жгучий хот-дог" class="order__image">
-
-                  <div class="order__product">
-                    <h3 class="order__product-title">Жгучий хот-дог</h3>
-
-                    <p class="order__product-weight">245г</p>
-
-                    <p class="order__product-price">239₽</p>
-                  </div>
-
-                  <div class="order__product-count count">
-                    <button class="count__minus">-</button>
-
-                    <p class="count__amount">1</p>
-
-                    <button class="count__plus">+</button>
-                  </div>
-                </li>
-              </ul>
+              <ul class="order__list"></ul>
 
               <div class="order__total">
                 <p>Итого</p>
 
                 <p>
-                  <span class="order__total-amount">1279</span>
+                  <span class="order__total-amount">0</span>
                   <span class="currency">₽</span>
                 </p>
               </div>
@@ -161,103 +101,7 @@
         <div class="catalog__wrapper">
           <h3 class="catalog__title">Бургеры</h3>
 
-          <ul class="catalog__list">
-            <li class="catalog__item">
-              <article class="product">
-                <img class="product__image" src="img/burger6.jpg" alt="Мясная бомба">
-
-                <p class="product__price">689<span class="currency">₽</span></p>
-
-                <h3 class="product__title">
-                  <button class="product__detail">Мясная бомба</button>
-                </h3>
-
-                <p class="product__weight">520г</p>
-
-                <button class="product__add">Добавить</button>
-              </article>
-            </li>
-
-            <li class="catalog__item">
-              <article class="product">
-                <img class="product__image" src="img/burger2.jpg" alt="Супер сырный">
-
-                <p class="product__price">550<span class="currency">₽</span></p>
-
-                <h3 class="product__title">
-                  <button class="product__detail">Супер сырный</button>
-                </h3>
-
-                <p class="product__weight">512г</p>
-
-                <button class="product__add">Добавить</button>
-              </article>
-            </li>
-
-            <li class="catalog__item">
-              <article class="product">
-                <img class="product__image" src="img/burger4.jpg" alt="Сытный">
-
-                <p class="product__price">639<span class="currency">₽</span></p>
-
-                <h3 class="product__title">
-                  <button class="product__detail">Сытный</button>
-                </h3>
-
-                <p class="product__weight">580г</p>
-
-                <button class="product__add">Добавить</button>
-              </article>
-            </li>
-
-            <li class="catalog__item">
-              <article class="product">
-                <img class="product__image" src="img/burger1.jpg" alt="Тяжелый удар">
-
-                <p class="product__price">480<span class="currency">₽</span></p>
-
-                <h3 class="product__title">
-                  <button class="product__detail">Тяжелый удар</button>
-                </h3>
-
-                <p class="product__weight">470г</p>
-
-                <button class="product__add">Добавить</button>
-              </article>
-            </li>
-
-            <li class="catalog__item">
-              <article class="product">
-                <img class="product__image" src="img/burger3.jpg" alt="Тяжелый удар">
-
-                <p class="product__price">450<span class="currency">₽</span></p>
-
-                <h3 class="product__title">
-                  <button class="product__detail">Вечная классика</button>
-                </h3>
-
-                <p class="product__weight">450г</p>
-
-                <button class="product__add">Добавить</button>
-              </article>
-            </li>
-
-            <li class="catalog__item">
-              <article class="product">
-                <img class="product__image" src="img/burger5.jpg" alt="Тяжелый удар">
-
-                <p class="product__price">560<span class="currency">₽</span></p>
-
-                <h3 class="product__title">
-                  <button class="product__detail">Итальянский</button>
-                </h3>
-
-                <p class="product__weight">510г</p>
-
-                <button class="product__add">Добавить</button>
-              </article>
-            </li>
-          </ul>
+          <ul class="catalog__list"></ul>
         </div>
       </div>
     </section>
@@ -375,13 +219,13 @@
 
         <form class="modal-delivery__form" id="delivery">
           <fieldset class="modal-delivery__fieldset-input">
-            <input class="modal-delivery__input" type="text" placeholder="Ваше имя">
-            <input class="modal-delivery__input" type="tel" placeholder="Телефон">
+            <input class="modal-delivery__input" type="text" name="name" placeholder="Ваше имя">
+            <input class="modal-delivery__input" type="tel" name="phone" placeholder="Телефон">
           </fieldset>
 
           <fieldset class="modal-delivery__fieldset-radio">
             <label class="modal-delivery__label">
-              <input class="modal-delivery__radio" type="radio" name="format" value="pickup">
+              <input class="modal-delivery__radio" type="radio" name="format" value="pickup" checked>
               <span>Самовывоз</span>
             </label>
 
@@ -391,10 +235,13 @@
             </label>
           </fieldset>
 
-          <fieldset class="modal-delivery__fieldset-input">
-            <input class="modal-delivery__input" type="text" placeholder="Улица, дом, квартира">
-            <input class="modal-delivery__input modal-delivery__input_half" type="number" placeholder="Этаж">
-            <input class="modal-delivery__input modal-delivery__input_half" type="number" placeholder="Домофон">
+          <fieldset class="modal-delivery__fieldset-input modal-delivery__fieldset-input_hidden"
+            name="delivery-address">
+            <input class="modal-delivery__input" type="text" name="street" placeholder="Улица, дом, квартира">
+            <input class="modal-delivery__input modal-delivery__input_half" name="floor" type="number"
+              placeholder="Этаж">
+            <input class="modal-delivery__input modal-delivery__input_half" name="intercom" type="number"
+              placeholder="Домофон">
           </fieldset>
         </form>
 
