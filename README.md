@@ -1,9 +1,6 @@
-# Your-Meal__Methed-School-marathon
-JS Practice. Burger delivery web-site
-
-# 
-Your-Meal. Ресторан доставки еды
+# Your-Meal. Ресторан доставки еды
 Практика JavaScript
+
 
 [Опубликованная версия](https://olgamorozova88.github.io/Your-Meal__Methed-School-marathon/).
 
