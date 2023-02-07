@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:3024'
+const API_URL = 'https://classic-harsh-spider.glitch.me'
 const PRODUCT_PREFIX = '/api/product'
 
 const getDataByCategory = (success, category="burger") => {
